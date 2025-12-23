@@ -1,0 +1,13 @@
+name: install_git
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create_directory_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install git
+        run: sudo apt install git
+
+
