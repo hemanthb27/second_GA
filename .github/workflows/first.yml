@@ -1,0 +1,15 @@
+name: Create Directory Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create_directory_job:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Create new directory
+        run: mkdir new_create
+
+      - name: Verify directory creation
+        run: ls -l
