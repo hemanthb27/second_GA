@@ -1,0 +1,11 @@
+name: List Files Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  list_files_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run ls -l
+        run: ls -l
